@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Merkato Smart Shop</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+       <img src="logo.png" alt="Merkato Smart Shop logo" />
+        <h1>Merkato Smart Shop</h1>
+      </div>
+
+      <div class="header-right">
+        <div class="favoritesEL">
+          <span>Favorites</span>
+          <span id="favCount">0</span>
+        </div>
+        <button id="themeToggle" onclick="toggleTheme()">
+          🌙
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <form id="searchForm">
+        <label for="searchInput" class="visually-hidden">Search products</label>
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search for a product..."
+         autocomplete="off"
+/>
+        <button type="submit">Search</button>
+      </form>
+
+      <p id="message"></p>
+
+      <div class="layout">
+        <section>
+          <h2>Main Products</h2>
+          <div id="products" class="productgrid"></div>
+        </section>
+
+        <section>
+          <h2>Favorites</h2>
+          <div id="favorites" class="favorites-grid"></div>
+        </section>
+      </div>
+    </main>
+
+   <footer>
+  <p>Merkato Smart Shop &copy; <span id="year"></span></p>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
